@@ -8,3 +8,4 @@ print(type(x))
 print(x[0])
 
 #Tuples cannot be changed so you cannot add or delete anything
+#x.append(3)
