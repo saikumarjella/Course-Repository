@@ -1,0 +1,23 @@
+input= int(input('enter a number:'))
+if input==1:
+    print('A')
+elif input==2:
+    print('B')
+elif input==3:
+    print('C')
+elif input==4:
+    print('D')
+elif input==5:
+    print('E')
+elif input==6:
+    print('F')
+elif input==7:
+    print('G')
+elif input==8:
+    print('H')
+elif input==9:
+    print('I')
+elif input==10:
+    print('J')
+else:
+    print('invalid input')
