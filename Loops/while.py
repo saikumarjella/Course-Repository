@@ -1,58 +1,53 @@
-colors = ['red','blue','green']
+#while loop can execute a set of statements as long as condition is true
 
-for color in colors:
-    print(color)
+# while condition:
+#     statements
 
-name = 'Johndoe'
+num = 1
+while num < 5:
+    print(num) 
+    num += 1 # you have to increment num here if not loop will run indefinitely
 
-for letter in name:
-    print(letter)
+#while needs to have a relevent variable to be ready and be incremented.
 
-#break control statement
+#break in while
 
-for letter in name:
-    print(letter)
-    if letter == 'n':
-        break
-
-for letter in name:
-    if letter == 'n':
-            break
-    print(letter)
-    
-#continue control statement
-
-for letter in name:
-    print(letter)
-    if letter == 'n':
-         continue
-    
-
-#else in for loop
-#else in a for loop specifies a block of code to be executed when the for loop iterates through all its variables succesfully
-
-for num in range(5):
+num = 1
+while num < 5:
     print(num)
-else:
-    print('finished for loop succesfully!') #else will not be executed if we use break to stop a loop
-
-for num in range(5):
-    if num == 2:
+    if num == 3:
         break
+    num += 1
+
+#continue in while
+num = 1
+while num < 5:
+    num += 1
+    if num == 3:
+        continue
     print(num)
+
+#else in while
+#the control goes to else block when condition is no longer true
+
+num = 1
+while num < 5:
+    print(num)
+    num += 1
 else:
-    print('finished for loop succesfully!')
+    print('num is not less than 5')
 
-#nested for loop
+num = 1
+while num < 5:
+    print(num)
+    if num == 3:
+        break
+    num += 1
+else:
+    print('num is not less than 5')
 
-color = ['red', 'black', 'white']
-clothes = ['shirt', 'pant', 'jacket']
+num = int(input('enter a number(enter -1 to stop)'))# -1 is called sentinel value here
 
-for c in color:
-    for i in clothes:
-        print(c,i)
-
-#pass statement, for loops cannot be empty we use pass to skip that statement for now
-
-for i in range(100):
-    pass
+while num != 7: 
+    print(num); 
+    num = int(input('enter a number(enter -1 to stop)'))
