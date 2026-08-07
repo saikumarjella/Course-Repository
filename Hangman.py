@@ -1,7 +1,4 @@
-"""A simple terminal Hangman game."""
-
 import random
-
 
 WORDS = [
     "python",
@@ -75,7 +72,6 @@ HANGMAN_PICTURES = [
 
 
 def play_game():
-    """Run one full game of Hangman."""
     word = random.choice(WORDS).upper()
     guessed_letters = set()
     wrong_guesses = 0
